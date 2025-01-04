@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Navegação</title>
+    <style>
+        body {
+            font: 13pt Arial;
+            color: black;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        button {
+            cursor: pointer;
+            width: 400px;
+            margin: 10px auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button#botao-azul {
+            display: block;
+            background-color: rgb(65, 68, 255);
+            padding: 15px;
+            font-size: medium;
+            color: white;
+            font-weight: bold;
+            border: 1.5px solid black;
+            transition: 0.3s;
+        }
+
+        button#botao-marrom {
+            display: block;
+            background-color: rgb(138, 80, 55);
+            padding: 15px;
+            font-size: medium;
+            color: white;
+            font-weight: bold;
+            border: 1.5px solid black;
+            transition: 0.3s;
+        }
+
+        button#botao-azul:hover {
+            background-color: rgb(207, 54, 54);
+        }
+
+        button#botao-marrom:hover {
+            background-color: rgb(207, 54, 54);
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio da Navegação</h1>
+    <p>Esta é a página principal, o índice do seu site. É a página cinza. A partir dela você pode acessar as outras áreas principais através dos botões a seguir:</p>
+
+    <a href="azul.html"><button id="botao-azul">Acessar a área azul</button></a>
+    <a href="marrom.html"><button id="botao-marrom">Acessar a área marrom</button></a>
+</body>
+</html>

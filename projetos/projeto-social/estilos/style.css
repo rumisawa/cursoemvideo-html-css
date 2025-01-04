@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    background-color: rgb(219, 219, 219);
+}
+
+body {
+    background: url(../imagens/fundo.jpg) no-repeat top center;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    padding: 40px 0px;
+    margin: 50px;
+    border: 30px solid rgb(157, 69, 60);
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 285px;
+    background: url('../imagens/frame-samsung.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 19px;
+    left: 16px;
+    width: 250px;
+    height: 554px;
+    border-radius: 17px;
+}
+
+section#redes-sociais {
+    display: inline-block;
+    float: right;
+    margin: 15px;
+}
+
+section#redes-sociais i {
+    display: block;
+    color: white;
+    transition: 0.2s;
+}
+
+section#redes-sociais > a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 15px;
+    height: 60px;
+    width: 60px;
+    box-sizing: border-box;
+    background-color: rgb(50, 50, 50);
+    text-decoration: none;
+}
+
+section#redes-sociais a:hover i {
+    color: rgb(255, 108, 98);
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+            font-size: 16px;
+        }
+        
+        body {
+            background-image: linear-gradient(to bottom, #6D3EBE, #B83190, #E84057, #F87A27, #FED375);
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .caixa {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            margin: 50px;
+            background-color: #bdbdbd;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgba(0, 0, 0, 0.3)
+        }
+
+        .caixa .esquerda {
+            position: relative;
+            background-color: white;
+            padding: 40px;
+        }
+
+        .titulo1 {
+            color: #E84057;
+            letter-spacing: 1px;
+            font-family: monospace;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .caixa .direita {
+            position: relative;
+            background-color: #B83190;
+            padding: 40px;
+        }
+
+        .titulo2 {
+            color: white;
+            letter-spacing: 2px;
+            font-family: monospace;
+            text-align: center;
+            text-transform: lowercase;
+            font-weight: 550;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <div class="esquerda">
+            <div class="testeGrad">
+                <h1 class="titulo1">Testando gradiente</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repudiandae soluta laborum magni delectus quisquam debitis ipsam ex omnis iste, inventore quod quam saepe, quasi autem enim, odit sapiente vitae ab voluptatem quos est sunt? Itaque cupiditate corrupti illum nihil dolor consequuntur qui minima neque suscipit et quis quas eaque delectus, nam quo blanditiis architecto corporis id voluptas molestias incidunt error vel! Accusantium sit, fugiat ipsum aspernatur similique labore suscipit. Asperiores natus, reiciendis itaque quasi dolore porro voluptates rem repellendus quas, recusandae nisi vero voluptate assumenda, odit necessitatibus sit. Esse, animi recusandae. Delectus placeat quod eius illum nulla itaque dicta est quas nisi adipisci. Ipsam, veritatis? Quaerat nihil libero eligendi consectetur praesentium. Atque culpa a obcaecati eos ducimus aliquam doloribus beatae nisi voluptatum vero. Quos ad labore blanditiis qui magnam molestias repellat, odit est officia eligendi deserunt praesentium reiciendis saepe, enim nemo at quam aperiam vel illo, placeat quidem quis necessitatibus? Tenetur dolores, quasi vitae voluptates velit ab cumque perspiciatis quidem quo labore fuga sit neque dicta, amet commodi sed, obcaecati qui necessitatibus fugit eos doloribus dolore iure expedita natus! Labore eveniet a, doloribus maiores inventore deleniti mollitia illo delectus ducimus rerum sint nisi architecto aut tempora tempore culpa explicabo?</p>
+            </div>
+        </div>
+
+        <div class="direita">
+            <div class="testeCaixaDir">
+                <h1 class="titulo2">Testando caixa da direita</h1>
+                <ul>
+                    <li>
+                        "Black hole Sun, won't you come? And wash away the rain..." - Black Hole Sun, by Soundgarden
+                    </li>
+                    <li>
+                        "You swallow me whole, with just a mumbled hello..." - Sugar, by Editors
+                    </li>
+                    <li>
+                        "Now the Sun burns my heart and the sand hurts my feelings..." - Hits Different, by Taylor Swift
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

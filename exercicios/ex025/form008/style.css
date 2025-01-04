@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(149, 197, 38);
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-family: "Open Sans", sans-serif;
+}
+
+section {
+    padding: 30px;
+    background-color: white;
+}
+
+fieldset {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    margin-top: 5px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    border: 1.5px solid rgb(58, 58, 58);
+}
+
+.form-field {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+
+}
+
+#media {
+    margin-top: 15px;
+    text-align: center;
+    font-size: medium;
+    font-size: larger;
+}

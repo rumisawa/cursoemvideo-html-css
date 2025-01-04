@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Output</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Calculadora ENEM</h1>
+            <form action="cadastro.php" method="POST" autocomplete="on">
+
+                <div class="form-field">
+                    <label for="ilin">Linguagens</label><br>
+                    <input type="number" name="lin" id="ilin" min="0" max="1000" required oninput="imedia.innerHTML = (Number(ilin.value) + Number(ihum.value) + Number(inat.value) + Number(imat.value) + Number(ired.value)) / 5">
+                </div>
+
+                <div class="form-field">
+                    <label for="ihum">Humanas</label><br>
+                    <input type="number" name="hum" id="ihum" min="0" max="1000" required oninput="imedia.innerHTML = (Number(ilin.value) + Number(ihum.value) + Number(inat.value) + Number(imat.value) + Number(ired.value)) / 5">
+                </div>
+
+                <div class="form-field">
+                    <label for="inat">Naturezas</label><br>
+                    <input type="number" name="nat" id="inat" min="0" max="1000" required oninput="imedia.innerHTML = (Number(ilin.value) + Number(ihum.value) + Number(inat.value) + Number(imat.value) + Number(ired.value)) / 5">
+                </div>
+
+                <div class="form-field">
+                    <label for="imat">Matemática</label><br>
+                    <input type="number" name="mat" id="imat" min="0" max="1000" required oninput="imedia.innerHTML = (Number(ilin.value) + Number(ihum.value) + Number(inat.value) + Number(imat.value) + Number(ired.value)) / 5">
+                </div>
+
+                <div class="form-field">
+                    <label for="ired">Redação</label><br>
+                    <input type="number" name="red" id="ired" min="0" max="1000" required oninput="imedia.innerHTML = (Number(ilin.value) + Number(ihum.value) + Number(inat.value) + Number(imat.value) + Number(ired.value)) / 5">
+                </div>
+                <br>
+                <div id="media">
+                    <label for="imedia">Sua média:</label><br>
+                    <output name="media" id="imedia">Insira suas notas nos campos para calcular a sua média</output>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

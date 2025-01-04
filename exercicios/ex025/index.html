@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 1px;
+        }
+
+        body {
+            background-color: rgb(119, 116, 214);
+        }
+
+        main {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-field {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            font-size: medium;
+            font-weight: normal;
+        }
+
+        section {
+            border: 1px solid black;
+            padding: 30px;
+            background-color: white;
+        }
+
+        button {
+            background-color: rgb(184, 124, 240);
+            padding: 10px;
+            border: 1px solid black;
+            font-weight: bolder;
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 10px;
+            transition: 0.5s;
+            font-size: large;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        input {
+            border-radius: 10px;
+            border: 1px solid black;
+            height: 30px;
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Form</h1>
+            <h2>Add new words to the dictionary!</h2>
+            <form action="dictionary.php" method="get" autocomplete="off">
+                <div class="form-field">
+                    <label for="iword">Word:</label>
+                    <input type="text" name="word" id="iword">
+                </div>
+                <div class="form-field">
+                    <label for="itranslation">Translation:</label>
+                    <input type="text" name="translation" id="itranslation">
+                </div>
+                <div class="form-field">
+                    <label for="imeaning">Meaning:</label>
+                    <input type="text" name="meaning" id="imeaning">
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

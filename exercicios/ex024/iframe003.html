@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            border: 2px solid black;
+            height: 400px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose one!</h1>
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Option 1</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Option 2</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Option 3</a></li>
+    </ul>
+    <iframe src="" frameborder="1" name="frame" srcdoc="<h1>Please, select one of the options above</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam, consequatur sunt ex porro soluta est quos, reprehenderit aperiam rem adipisci delectus. Ullam, libero! Blanditiis soluta in quas culpa accusamus.</p>">
+
+    </iframe>
+</body>
+</html>

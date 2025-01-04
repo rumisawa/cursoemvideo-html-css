@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Radio e checkbox</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Pesquisa - Programação</h1>
+            <p>A pesquisa a seguir é anônima.</p>
+            <br>
+            <form action="cadastro.php" method="get" autocomplete="on">
+
+                <fieldset>
+                    <legend>Gênero</legend>
+                    
+                    <!--Quando o type é radio, o name deve ser o mesmo para todos os inputs-->
+                    <input type="radio" name="genero" id="igenmasc">
+                    <label for="igenmasc">Masculino</label>
+
+                    <input type="radio" name="genero" id="igenfem">
+                    <label for="igenfem">Feminino</label>
+
+                    <input type="radio" name="genero" id="igenother">
+                    <label for="igenother">Outro</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Linguagens favoritas</legend>
+                        <input type="checkbox" name="py" id="ipy">
+                        <label for="ipy">Python</label>
+                        <br>
+                        <input type="checkbox" name="js" id="ijs">
+                        <label for="ijs">JavaScript</label>
+                        <br>
+                        <input type="checkbox" name="java" id="ijava">
+                        <label for="ijava">Java</label>
+                        <br>
+                        <input type="checkbox" name="c" id="ic">
+                        <label for="ic">C</label>
+                        <br>
+                        <input type="checkbox" name="php" id="iphp">
+                        <label for="iphp">PHP</label>
+                        <br>
+                        <input type="checkbox" name="flutter" id="iflutter">
+                        <label for="iflutter">Flutter</label>
+                    </fieldset>
+
+                <button type="reset">Limpar</button>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento nos eixos</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
+        }
+
+        .container {
+            display: flex;
+            height: 200px;
+            background-color: coral;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .item {
+            background-color: crimson;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox - Alinhamento nos eixos</h1>
+    <h2>justify-content: flex-start, flex-end, space-between, space-evenly, space-around</h2>
+    <p>A propriedade justify-content modifica o alinhamento do conteúdo de acordo com o main-axis.</p>
+
+    <h2>align-items: flex-start, flex-end, stretch, center</h2>
+    <p>O align-items modifica o alinhamento do conteúdo de acordo com o cross-axis.
+        <br>
+        Por padrão, o align-items é definido como stretch.
+    </p>
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number, date e time</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Adicionar evento</h1>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <div class="form-field">
+                    <label for="inome">Nome do evento</label>
+                    <input class="input" type="text" name="nome" id="inome" required>
+                </div>
+                <div class="form-field">
+                    <label for="iquantidade">Quantidade de participantes</label>
+                    <input class="input" type="number" name="quantidade" id="iquantidade" min="1" max="100" required>
+                </div>
+                <div class="form-field">
+                    <label for="idata">Data</label>
+                    <input class="input" type="date" name="data" id="idata" value="2024-12-15" required>
+                </div>
+                <div class="form-field">
+                    <label for="ihorario">Horário</label>
+                    <input class="input" type="time" name="horario" id="ihorario" required>
+                </div>
+                <button type="reset">Limpar</button>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

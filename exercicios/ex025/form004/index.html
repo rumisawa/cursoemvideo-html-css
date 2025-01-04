@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RegEx | Campos de e-mail e telefone</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Lista de espera - Turma Japonês</h1>
+            <h2>Envie o seu contato para entrar na lista de espera do curso de japonês.</h2>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <div class="form-field">
+                    <label for="inome">Nome:</label>
+                    <input class="input" type="text" name="nome" id="inome" placeholder="Seu nome" required>
+                </div>
+                <div class="form-field">
+                    <label for="iemail">E-mail:</label>
+                    <input class="input" type="text" name="email" id="iemail"  placeholder="Seu e-mail" autocomplete="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="itelefone">Telefone:</label>
+                    <input class="input" type="tel" name="telefone" id="itelefone" placeholder="(xx) xxxxx-xxxx" autocomplete="tel" pattern="^\{\d{2}\}\d{4,5}-\d{4}$" required>
+                </div>
+                <button type="reset">Limpar</button>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
